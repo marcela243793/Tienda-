@@ -12,6 +12,7 @@ const productos =[
 {id:9,nombre:'usb1',precio:30000},
 {id:18,nombre:'usb2',precio:30000}         
 ];
+   
 const productosContainer=document.getElementById
 ('productos');
 const listaCarrito=document.getElementById
@@ -93,6 +94,7 @@ const id =parseInt(event.target.getAttribute('data-id'));
 agregarAlCarrito(id);
 }
 });
+   
 //Evento para comprar y generar la factura
 btnComprar.addEventListener('click',()=>{
 if(carrito.length>0){
