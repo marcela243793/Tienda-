@@ -12,7 +12,7 @@ const productos =[
 {id:9,nombre:'usb1',precio:30000},
 {id:18,nombre:'usb2',precio:30000}         
 ];
-   
+
 const productosContainer=document.getElementById
 ('productos');
 const listaCarrito=document.getElementById
@@ -35,11 +35,11 @@ const btnVolverComprar=document.getElementById
 let carrito=[];
 let totalcarrito =0;
 
-//Funcion para agregan un producto al carrito
+//Funcion para agregan un productos al carrito
 function agregarAlCarrito(id) {
-const producto=productos.find(p=>p.id ===id);
-if(producto){
-carrito.push(producto);
+const productos=productos.find(p=>p.id ===id);
+if(productos){
+carrito.push(productos);
 actualizarCarrito();
    }
 }
@@ -49,14 +49,14 @@ function actualizarCarrito() {
 listaCarrito.innerHTML='';
 totalCarrito =0;
 
-carrito.forEach(producto =>{
+carrito.forEach(productos =>{
 const li=document.createelement('li');
 li.innerHTML=`
-<span>${producto.nombre}</span>
-<span>$${producto.precio.tolocalestring()}</span>
+<span>${productos.nombre}</span>
+<span>$${productos.precio.tolocalestring()}</span>
 `;
 listaCarrito.appendChild(li);
-totalCarrito +=producto.precio;
+totalCarrito +=productos.precio;
 });
 
 totalcarritoElement.textcontent=`Total:$${totalcarrito.tolocalestrin()}`;
@@ -66,15 +66,15 @@ function mostrarfactura(){
 itemsFacturaDiv.innerHTML='';
 let totalfactura =0;
 
-carrito.forEach(producto =>{
+carrito.forEach(productos =>{
 const itemDiv=document.createElement('div');
 itemDiv.innerHTML =
-span>$producto.nombre<span>
-span>$$producto.precio.toLocalestring()<span>
+span>$productos.nombre<span>
+span>$$productos.precio.toLocalestring()<span>
 `;
 
 itemsfacturaDiv.appendChild(itemDiv);
-totalfactura +=producto.precio;
+totalfactura +=productos.precio;
 });
 totalfacturaElement.textContent=Total Factura:$${totalFactura.toLocalestring}`;
 facturaSection.style.display='block';
@@ -87,14 +87,13 @@ actualizarCarrito();
 facturaSection.style.display ='none';
 }
 
-//Evento para agregar un producto al carrito
+//Evento para agregar un productos al carrito
 productoscontainer.addEventListener('click',(event)=>{
 if(event.target.classlist.contains('btn-agregar')){
 const id =parseInt(event.target.getAttribute('data-id'));
 agregarAlCarrito(id);
 }
 });
-   
 //Evento para comprar y generar la factura
 btnComprar.addEventListener('click',()=>{
 if(carrito.length>0){
@@ -109,5 +108,5 @@ alert("El carrito esta vacio.Por favor,agregue productos antes de comprar.");
 limpiarcarrito();
 btnvolvercomprar.addEventListener('click',()=>{
 limpiarcarrito();
-});
+   });
 });
