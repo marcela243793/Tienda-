@@ -19,7 +19,7 @@ justify-content:space-around;
 padding:20px;
 }
 
-•productos {
+.producto {
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
@@ -36,7 +36,7 @@ width:200px;
 box-shadow:0 2px 4px rgba(0,0,0,0.1);
 }
 
-•productos img{
+.productos img{
 max-width:100px;
 height:auto;
 margin-bottom:10px;
