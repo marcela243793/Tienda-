@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Mi tienda online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi tienda online</h1>
+    </header>
+    <main>
+        <section id="productos">
+        <div class="productos">
+  <img src="Computador1.jpg" alt="Computador 1">
+        <h3>Computador ASUS</h3>
+         <p>Intel Core i5</p>
+       <p><b>Almacenamiento:</b> 512 GB SSD</p>
+     <p><b>Sistema operativo:</b> Windows 10</p>
+         <p><b>Precio:</b> $2,300,000</p>
+  <button class="btn-agregar" data-id="1">Agregar al carrito</button>
+            </div>
+
+         <div class="productos">
+   <img src="computador2.jpg" alt="Computador 2">
+         <h3>Computador 2</h3>
+          <p>Computador portátil</p>
+      <p><b>Sistema operativo:</b> Windows 9</p>
+         <p><b>Precio:</b> $1,800,000</p>
+ <button class="btn-agregar" data-id="2">Agregar al carrito</button>
+            </div>
+
+    <div class="productos">
+ <img src="auriculares1.png" alt="Auriculares 1">
+      <h3>Auriculares 1</h3>
+     <p>Auriculares inalámbricos</p>
+     <p>Duración de la carga mas duradera</p>
+     <p>Se pausa para contestar llamadas</p>
+      <p><b>Precio:</b> $85,000</p>
+<button class="btn-agregar" data-id="3">Agregar al carrito</button>
+            </div>
+
+   <div class="productos">
+    <img src="mouse1.jpg" alt="Mouse 1">
+     <h3>Mouse 1</h3>
+     <p>Color azul</p>
+    <p>Buena calidad</p>
+  <p>Incluye un USB</p>
+  <p><b>Precio:</b> $65,000</p>
+ <button class="btn-agregar" data-id="4">Agregar al carrito</button>
+            </div>
+
+    <div class="productos">
+    <img src="mouse2.jpg" alt="Mouse 2">
+      <h3>Mouse 2</h3>
+      <p>Color negro</p>
+      <p>Excelente calidad</p>
+      <p>De la tecnología Genius</p>
+      <p><b>Precio:</b> $45,000</p>
+ <button class="btn-agregar" data-id="5">Agregar al carrito</button>
+            </div>
+
+<div class="productos">
+ <img src="parlantes1.jpg" alt="Parlantes 1">
+ <h3>Parlantes inalámbricos</h3>
+  <p>Bocinas de alto volumenes</p>
+   <p>Marca Steren</p>
+   <p><b>Precio:</b> $38,000</p>
+  <button class="btn-agregar" data-id="6">Agregar al carrito</button>
+            </div>
+
+  <div class="productos">
+      <img src="teclado1.jpg" alt="Teclado 1">
+    <h3>Teclado color negro o blanco</h3>
+       <p>Teclado marca Logitech</p>
+     <p>Teclado negro de marca VICTSIN</p>
+     <p>Incluye un mouse y una memoria usb</p>
+      <p><b>Precio:</b> $25,000</p>
+  <button class="btn-agregar" data-id="7">Agregar al carrito</button>
+            </div>
+
+    <div class="productos">
+    <img src="teclado2.jpg" alt="Teclado 2">
+    <h3>Teclado 2 color negro</h3>
+    <p>De marca Logitech</p>
+    <p><b>Precio:</b> $50,000</p>   <button class="btn-agregar" data-id="8">Agregar al carrito</button>
+            </div>
+
+    <div class="productos">
+     <img src="usb1.jpg" alt="usb 1">
+       <h3>USB 1</h3>
+       <p>Tecnología DTSEG</p>
+       <p>16 GB</p>
+        <p>Color gris</p>
+       <p>Tecnología de la empresa Kingston</p>
+     <p>Compatible en computador  portátil</p>
+        <p><b>Precio:</b> $30,000</p>
+  <button class="btn-agregar" data-id="9">Agregar al carrito</button>
+            </div>
+
+   <div class="productos">   
+   <img src="usb2.jpg" alt="USB 2">
+    <h3>USB 2</h3>
+    <p>Color plata</p>
+    <p>Tecnología DTSEG</p>
+      <p>8 GB</p>
+    <p><b>Precio:</b> $30,000</p>
+ <button class="btn-agregar" data-id="10">Agregar al carrito</button>
+            </div>
+
+        </section>
+
+   <section id="carrito">
+    <h2>Carrito de compras</h2>
+    <ul id="lista-carrito">
+     <!-- Items del carrito irán aquí -->
+       </ul>
+       <p id="total-carrito">Total: $0</p>
+      <button id="btn-comprar">Comprar</button>
+    <button id="btn-nueva-compra">Nueva Compra
+    </button>
+        </section>
+
+  <section id="factura" style="display: none;">
+            <h2>Factura</h2>
+            <div id="items-factura">
+        <!-- Items de la factura irán aquí -->
+            </div>
+     <p id="total-factura">Total Factura: $0</p>
+            <button id="btn-volver-comprar">Volver a Comprar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
